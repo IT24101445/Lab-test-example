@@ -25,9 +25,9 @@ function App() {
       <div className="overlay"></div>
       <main>
         <nav>
-          <div className="nav-brand">Practice Lab Test</div>
+          <div className="nav-brand">Item Manager</div>
           <div className="nav-links">
-            <a href="#">MERN Item Manager 11</a>
+            <a href="#">MERN Item Manager</a>
           </div>
         </nav>
 
