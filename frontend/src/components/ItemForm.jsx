@@ -4,7 +4,7 @@ import { createItem } from '../api';
 export default function ItemForm({ onItemAdded }) {
  const [name, setName] = useState('');
  const [description, setDescription] = useState('');
-const [price, setPrice] = useState('');
+ const [price, setPrice] = useState('');
 
  const handleSubmit = async (e) => {
  e.preventDefault();
@@ -16,9 +16,9 @@ const [price, setPrice] = useState('');
  };
 
  return (
- <form onSubmit={handleSubmit} style={{ marginBottom: '2rem' }}>
+ <form onSubmit={handleSubmit} className="item-form">
  <h2>Add New Item</h2>
- <div>
+ <div className="form-group">
  <input
  placeholder="Item name"
  value={name}
@@ -27,7 +27,7 @@ const [price, setPrice] = useState('');
  />
  </div>
 
- <div>
+ <div className="form-group">
  <input
  placeholder="Description"
  value={description}
@@ -36,17 +36,17 @@ const [price, setPrice] = useState('');
  />
  </div>
 
-<div>
+ <div className="form-group">
  <input
  placeholder="Price"
- type= "number"
+ type="number"
  value={price}
  onChange={e => setPrice(e.target.value)}
  required
  />
  </div>
  
-  <button type="submit">Add Item</button>
+ <button type="submit">Add Item</button>
  </form>
  );
 }
